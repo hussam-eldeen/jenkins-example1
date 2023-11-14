@@ -1,10 +1,10 @@
 pipeline {
     tools {
     maven 'maven_3_5_0'
-  }
+  
     agent any
 
-    stages {
+     stages {
         stage ('Compile Stage') {
 
             steps {
@@ -31,5 +31,5 @@ pipeline {
                 }
             }
         }
-    }
-
+      }
+}

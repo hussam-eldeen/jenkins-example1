@@ -1,7 +1,7 @@
 pipeline {
     tools {
     maven 'maven_3_5_0'
-  
+    }
     agent any
 
      stages {
@@ -11,7 +11,7 @@ pipeline {
                 
                     sh 'mvn clean compile'
                 }
-            }
+            
         }
 
         stage ('Testing Stage') {
@@ -32,4 +32,4 @@ pipeline {
             }
         }
       }
-}
+
